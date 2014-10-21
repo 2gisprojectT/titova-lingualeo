@@ -4,40 +4,66 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://lingualeo.com/" />
-<title>Authorization</title>
+<title>authorization</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Authorization</td></tr>
+<tr><td rowspan="1" colspan="3">authorization</td></tr>
 </thead><tbody>
 <tr>
-<!--Открытие ресурса>
 	<td>open</td>
-<!--Язык отображения - русский>
-	<td>/ru/</td>
+	<td>/ru/dashboard</td>
 	<td></td>
 </tr>
 <tr>
-<!--Войти>
+	<td>clickAndWait</td>
+	<td>link=Р’С…РѕРґ</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>link=Р’РѕР№С‚Рё</td>
+	<td>id=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=email</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>name=email</td>
-<!--Авторизация легального пользователя под правильным паролем, почтовый ящик и пароль изменены-->
+	<td>id=email</td>
 	<td>Test@mail.ru</td>
 </tr>
 <tr>
+	<td>click</td>
+	<td>id=password</td>
+	<td></td>
+</tr>
+<tr>
 	<td>type</td>
-	<td>name=password</td>
+	<td>id=password</td>
 	<td>TestPass</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
 	<td>//input[@value='Р’РѕР№С‚Рё']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Р’С‹С…РѕРґ</td>
 	<td></td>
 </tr>
 
