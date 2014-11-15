@@ -11,10 +11,13 @@ class SearchForm(BaseComponent):
 
     def search(self, request):
         self.driver.find_element_by_css_selector(self.selectors['input']).click()
+        self.driver.find_element_by_css_selector(self.selectors['input']).clear()
         self.driver.find_element_by_css_selector(self.selectors['input']).send_keys(request)
         self.driver.find_element_by_css_selector(self.selectors['button']).click()
+
     def drop_filter (self, request1):
         self.driver.find_element_by_css_selector(self.selectors['input']).click()
+        self.driver.find_element_by_css_selector(self.selectors['input']).clear()
         self.driver.find_element_by_css_selector(self.selectors['input']).send_keys(request1)
         self.driver.find_element_by_css_selector(self.selectors['button']).click()
         if (self.driver.find_element_by_css_selector(self.selectors['no_results']).is_displayed()):
